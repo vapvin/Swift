@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Testing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test First" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5by-mN-Qpd">
+                                <rect key="frame" x="77" y="119" width="221" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="mOY-oj-XQd"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="o3Q-xj-rDo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="49"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="st2_thumb03" translatesAutoresizingMaskIntoConstraints="NO" id="hgk-mN-Bra">
+                                <rect key="frame" x="27.666666666666657" y="227" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="9Fv-IF-F0B"/>
+                                    <constraint firstAttribute="height" constant="320" id="BtQ-jg-0Jx"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UQ-at-buk">
+                                <rect key="frame" x="87.666666666666686" y="678" width="200" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="XNq-k3-oao"/>
+                                    <constraint firstAttribute="width" constant="200" id="mQH-rW-e2q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <state key="normal" title="새로고침">
+                                    <color key="titleColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="reflash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MH3-jy-RRU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="가격은 1000000원 입니다." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Wp-ps-Ywa">
+                                <rect key="frame" x="48" y="620" width="278" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hgk-mN-Bra" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="183" id="4HP-da-KlR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5by-mN-Qpd" secondAttribute="trailing" constant="77" id="CFd-Yf-hBD"/>
+                            <constraint firstItem="5by-mN-Qpd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="LXP-ic-QYZ"/>
+                            <constraint firstItem="0UQ-at-buk" firstAttribute="top" secondItem="0Wp-ps-Ywa" secondAttribute="bottom" constant="17" id="OVo-jk-ZBf"/>
+                            <constraint firstItem="0UQ-at-buk" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cd8-YA-GaQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0UQ-at-buk" secondAttribute="bottom" constant="25" id="dA7-Qt-Mne"/>
+                            <constraint firstItem="hgk-mN-Bra" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nWf-5a-RqR"/>
+                            <constraint firstItem="5by-mN-Qpd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="rh3-RF-puO"/>
+                            <constraint firstItem="0Wp-ps-Ywa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="tQI-c8-tHk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="pricelable" destination="0Wp-ps-Ywa" id="5k6-qk-shz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.4384236453202"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="st2_thumb03" width="250" height="303"/>
+    </resources>
+</document>
