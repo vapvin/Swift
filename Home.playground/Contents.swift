@@ -25,31 +25,31 @@ import Foundation
 //    i += 1
 //} while i < 10
 
-
-let closeRange = 0...10
-let halfCloseRange = 0..<10
-
-var sum = 0
-for i in closeRange{
-    print("----> \(i)")
-    sum += i
-}
-
-print("total sum: \(sum)")
-
-var sinValue: CGFloat = 0
-
-for i in closeRange{
-    sinValue = sin(CGFloat.pi/4 * CGFloat(i))
-}
-
-for i in closeRange{
-    if i % 2 == 0 && i != 0{
-        print("value: \(i)")
-    }
-}
-
-
-for i in closeRange where i % 2 == 0 && i != 0 {
-    print("This syntax Asome: \(i)")
-}
+//
+//let closeRange = 0...10
+//let halfCloseRange = 0..<10
+//
+//var sum = 0
+//for i in closeRange{
+//    print("----> \(i)")
+//    sum += i
+//}
+//
+//print("total sum: \(sum)")
+//
+//var sinValue: CGFloat = 0
+//
+//for i in closeRange{
+//    sinValue = sin(CGFloat.pi/4 * CGFloat(i))
+//}
+//
+//for i in closeRange{
+//    if i % 2 == 0 && i != 0{
+//        print("value: \(i)")
+//    }
+//}
+//
+//
+//for i in closeRange where i % 2 == 0 && i != 0 {
+//    print("This syntax Asome: \(i)")
+//}
