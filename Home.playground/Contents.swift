@@ -42,3 +42,14 @@ var sinValue: CGFloat = 0
 for i in closeRange{
     sinValue = sin(CGFloat.pi/4 * CGFloat(i))
 }
+
+for i in closeRange{
+    if i % 2 == 0 && i != 0{
+        print("value: \(i)")
+    }
+}
+
+
+for i in closeRange where i % 2 == 0 && i != 0 {
+    print("This syntax Asome: \(i)")
+}
